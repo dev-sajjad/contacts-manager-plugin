@@ -1,0 +1,87 @@
+.contacts-mgr-box.contacts-table {
+  max-width: 900px !important;
+}
+
+.contacts-mgr-box table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+.contacts-mgr-box thead,
+.contacts-mgr-box tbody,
+.contacts-mgr-box tfoot,
+.contacts-mgr-box tr,
+.contacts-mgr-box td,
+.contacts-mgr-box th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+.contacts-mgr-box .table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #212529;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #212529;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #212529;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+
+  width: 100%;
+  margin-bottom: 16px;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+}
+
+.contacts-mgr-box .table > :not(caption) > * > * {
+  padding: 8px;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.contacts-mgr-box .table > thead {
+  vertical-align: bottom;
+}
+
+.contacts-mgr-box .table-hover > tbody > tr:hover {
+  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  color: var(--bs-table-hover-color);
+}
+
+.contacts-mgr-box p.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-mgr-box .table-nav {
+  text-align: right;
+}
+
+.contacts-mgr-box .page-number {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
+
+.contacts-mgr-box .table-nav button {
+  height: 32px;
+  width: 32px;
+
+  border: none;
+  border-radius: 0;
+
+  padding: 0;
+
+  color: white;
+  background-color: rgb(64, 158, 255);
+
+  cursor: pointer;
+}
+
+.contacts-mgr-box .table-nav button:disabled {
+  background-color: rgb(240, 242, 245);
+}

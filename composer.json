@@ -1,0 +1,20 @@
+{
+    "name": "dev-sajjad/contacts-manager",
+    "description": "A Wordpress Contacts Manager Plugin",
+    "type": "wordpress-plugin",
+    "license": "GPLv2 or later",
+    "authors": [
+        {
+            "name": "dev-sajjad",
+            "email": "sajjadbmarpc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Contacts\\Manager\\" : "includes/"
+        },
+        "files": []
+    }
+}

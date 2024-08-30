@@ -1,0 +1,16 @@
+.contacts-mgr-box.contact-card {
+  line-height: 16px;
+
+  width: 100%;
+  max-width: 350px;
+
+  padding: 3px 24px;
+
+  border-radius: 6px;
+}
+
+.contacts-mgr-box.contact-card .field .field-name {
+  display: inline-block;
+  width: 80px;
+  font-weight: 600;
+}

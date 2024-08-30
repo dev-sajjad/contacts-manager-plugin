@@ -1,0 +1,14 @@
+.contact-mgr-box.error {
+  width: 100%;
+  max-width: 350px;
+
+  color: white;
+
+  background-color: hsl(0, 100%, 60%);
+
+  text-align: center;
+
+  padding: 3px 24px;
+
+  border-radius: 6px;
+}
