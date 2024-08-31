@@ -1,5 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import TableView from "@/views/TableView.vue";
+import TableView from "../views/TableView.vue";
+import AddNewView from "../views/AddNewView.vue";
+import EditView from "../views/EditView.vue";
+import SettingsView from "../views/SettingsView.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -12,18 +15,18 @@ const router = createRouter({
     {
       path: "/add-new",
       name: "Add New Contact",
-      component: () => import("@/views/AddNewView.vue"),
+      component: AddNewView,
     },
     {
       path: "/edit/:id",
       name: "Edit Contact",
-      component: () => import("@/views/EditView.vue"),
+      component: EditView,
       props: true,
     },
     {
       path: "/settings",
       name: "Settings",
-      component: () => import("@/views/SettingsView.vue"),
+      component: SettingsView,
     },
   ],
 });

@@ -2,8 +2,8 @@
 import { reactive } from "vue";
 import { useRouter } from "vue-router";
 import { ElMessage } from "element-plus";
-import { postAJAX } from "@/composable";
-import ContactForm from "@/components/ContactFormComponent.vue";
+import { postAJAX } from "../composable";
+import ContactForm from "../components/ContactFormComponent.vue";
 import "element-plus/es/components/message/style/css";
 
 const router = useRouter();

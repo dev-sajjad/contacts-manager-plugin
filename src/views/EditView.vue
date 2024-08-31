@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from "vue";
 import { useRoute } from "vue-router";
-import { getAJAX, postAJAX } from "@/composable";
+import { getAJAX, postAJAX } from "../composable";
 import { ElMessage } from "element-plus";
 import "element-plus/es/components/message/style/css";
-import ContactForm from "@/components/ContactFormComponent.vue";
+import ContactForm from "../components/ContactFormComponent.vue";
 
 const route = useRoute();
 

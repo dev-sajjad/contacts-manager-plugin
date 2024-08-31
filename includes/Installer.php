@@ -52,16 +52,16 @@ class Installer
             `email` varchar(255) NOT NULL,
             `phone` varchar(20) NOT NULL,
             `address` varchar(255) NOT NULL,
-            `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-            `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+            `created_at` timestamp NOT NULL,
+            `updated_at` timestamp NOT NULL
         ) $charset_collate;";
 
-        if (! function_exists('dbDelta')) {
+        if (!function_exists('dbDelta')) {
             require_once ABSPATH . 'wp-admin/includes/upgrade.php';
         }
         dbDelta($create_table_query);
     }
-    
+
     /**
      * Initialize the default option values for the plugin options
      */

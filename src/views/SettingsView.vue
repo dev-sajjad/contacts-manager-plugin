@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { ElMessage } from "element-plus";
-import { getAJAX, getSetting, updateSetting } from "@/composable";
+import { getAJAX, getSetting, updateSetting } from "../composable";
 
 const settings = ref({});
 

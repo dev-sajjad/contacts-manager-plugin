@@ -2,8 +2,8 @@
 import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
 import { ElMessage } from "element-plus";
-import { getAJAX, postAJAX } from "@/composable";
-import CopyIcon from "@/components/CopyIconComponent.vue";
+import { getAJAX, postAJAX } from "../composable";
+import CopyIcon from "../components/CopyIconComponent.vue";
 import "element-plus/es/components/message/style/css";
 
 const contacts = ref([]);
